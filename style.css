@@ -1,0 +1,354 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Cinzel", serif;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+a {
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+h1 {
+  font-size: 10rem;
+
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+}
+h2 {
+  font-size: 7rem;
+  text-transform: capitalize;
+  line-height: 0.8;
+  font-weight: 400;
+  color: white;
+}
+h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  line-height: 1;
+  font-weight: 400;
+  color: white;
+}
+h4 {
+  font-size: 2.4rem;
+  text-transform: capitalize
+  line-height: 2.4;
+  font-weight: 700;
+  color: white;
+}
+h5 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  line-height: 1.6;
+  font-weight: 400;
+  color: white;
+}
+h6 {
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1.7;
+  font-weight: 400;
+  color: white;
+}
+
+/*---------------------
+      Header Style 
+-----------------------*/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/backgrounds/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 20rem;
+}
+/* Nav Bar */
+nav {
+  width: 74vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 4.5rem 0;
+  margin-bottom: 5rem;
+}
+.menu-link ul {
+  list-style: none;
+  display: flex;
+  width: 220px;
+  margin: 0 6rem 0 6rem;
+  justify-content: space-between;
+}
+.menu-link a {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.menu-link a:hover {
+  color: #b28b65;
+}
+.menu-logo img {
+  max-width: 15rem;
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.hero-container h4 {
+  margin-bottom: 1rem;
+}
+.hero-container h1{
+  margin-bottom: 3.5rem;
+}
+.hero-container a {
+  color: black;
+}
+.line {
+  background: white;
+  height: 2px;
+  width: 30px;
+  margin-bottom: 3.5rem;
+}
+.primary-button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  background: white;
+  padding: 1.8rem 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+.primary-button:hover{
+  background: #B28E65;
+  color: white;
+}
+
+/*---------------------
+     History Section 
+-----------------------*/
+.history-container {
+  background: url(images/backgrounds/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.history-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15rem 0;
+  width: 52%;
+}
+.line2{
+  background: white;
+  height: 2px;
+  width: 50px;
+  margin-bottom: 3.5rem;
+  margin-top: 3.5rem;
+}
+
+.history-content h5 {
+  margin-bottom: 3rem;
+}
+.history-content h6 {
+  margin-bottom: 2rem;
+}
+.history-content p {
+  color: white;
+  margin-bottom: 5rem;
+}
+.primary-button2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  background: #705479;
+  padding: 1.8rem 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+.primary-button2:hover{
+  background: white;
+  color: black;
+}
+
+/*---------------------
+     Menu Section 
+-----------------------*/
+.menus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menus h4 {
+  width: 65%;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+}
+.menu1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/backgrounds/background3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex: 1 1 40rem; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 19rem 0;
+}
+.menu2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/backgrounds/background4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex: 1 1 40rem; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 19rem 0;
+
+}
+.line3{
+  background: white;
+  height: 2px;
+  width: 50px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.secondary-button{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: #b28b65;
+  padding: 1.8rem 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+.secondary-button:hover{
+  background: #705479;
+}
+.secondary-button2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: #705479;
+  padding: 1.8rem 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+.secondary-button2:hover{
+  background: white;
+  color: black;
+}
+/*---------------------
+     Responsiveness 
+-----------------------*/
+.checkbtn {
+  font-size: 2.5rem;
+  color: white;
+  line-height: 8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 22rem;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+.history-content {
+  width: 79%;
+}
+
+.menus h4 {
+  width: 95%;
+}
+
+.menu-link {
+  display: none;
+}
+  .checkbtn {
+    display: block;
+  } 
+  
+}
+@media (max-width: 950px) {
+  header {
+    padding-bottom: 10rem;
+  }
+  .hero-container h1 {
+    font-size: 6.5rem;
+  }
+  .history-content{
+    width: 92%;
+    padding: 10rem 0;
+  }
+  .history-content h2{
+    font-size: 6rem;
+  }
+  .history-content h5 {
+    font-size: 1.6rem;
+  }
+  .history-content p {
+    font-size: 1.4rem;
+  }
+  .menus h2 {
+    font-size: 5rem;
+  }
+  .menus h4 {
+    font-size: 2rem;
+  }
+  .menu1 {
+    padding: 12rem 0;
+  }
+  .menu2 {
+    padding: 12rem 0;
+  }
+}
+
+@media (max-width: 520px) {
+  h4 {
+    font-size: 2.1rem;
+  }
+  .hero-container h1 {
+    font-size: 5rem;
+  }
+  .history-content h2{
+    font-size: 4rem;
+  }
+  .menus h2 {
+    font-size: 4rem;
+  }
+  header {
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
