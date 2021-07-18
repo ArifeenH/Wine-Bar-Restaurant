@@ -22,6 +22,10 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 700;
+  display: inline-block;
+}
+img {
+  display: block;
 }
 h1 {
   font-size: 10rem;
@@ -194,7 +198,6 @@ nav {
   background: white;
   color: black;
 }
-
 /*---------------------
      Menu Section 
 -----------------------*/
@@ -233,7 +236,6 @@ nav {
   justify-content: center;
   text-align: center;
   padding: 19rem 0;
-
 }
 .line3{
   background: white;
@@ -242,7 +244,6 @@ nav {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
 .secondary-button{
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -266,6 +267,82 @@ nav {
   background: white;
   color: black;
 }
+
+/*---------------------
+    Product Section 1 
+-----------------------*/
+.products1 {
+  background: #FAF6EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+.line4 {
+  background: #b28b65;
+  height: 1px;
+  width: 50px;
+  margin-bottom: 3rem;
+}
+.products1 h2 {
+  color: black;
+  width: 90%;
+}
+.bottles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem .5rem;
+}
+.bottles h5 {
+  color: #b28b65;
+  padding-bottom: 2rem;
+}
+.bottle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+  padding-top: 3rem;
+  margin: 0.5rem;
+  max-width: 325px;
+}
+
+.bottle:hover{
+  background-color: white;
+}
+
+.bottle a {
+  font-family: 'Cinzel', sans-serif;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+.product-line{
+  background: #b28b65;
+  height: 0.5px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.secondary-button3{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  color: #705479;
+  border: 1px solid #b28b65;
+  padding: 1.8rem 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+.secondary-button3:hover{
+  border: 1px solid black;
+}
 /*---------------------
      Responsiveness 
 -----------------------*/
@@ -281,6 +358,7 @@ nav {
 #check {
   display: none;
 }
+
 
 @media (max-width: 1024px) {
 .history-content {
@@ -298,6 +376,20 @@ nav {
     display: block;
   } 
   
+ /* Products Section */
+.products1 {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.bottles {
+  padding: 3rem 2rem;
+}
+.bottles img {
+  width: 117px;
+}
+.bottles a{
+  padding: 1.5rem 0;
+}
 }
 @media (max-width: 950px) {
   header {
@@ -331,6 +423,29 @@ nav {
   .menu2 {
     padding: 12rem 0;
   }
+
+/* Products Section */
+.bottles a{
+  font-size: 1.45rem;
+}
+ .products1 h2{
+   font-size: 5.5rem;
+ }
+}
+
+
+@media (max-width: 800px) {
+  /* Products Section */
+  .bottles{
+    flex-wrap: wrap;
+  }
+  .bottle {
+    max-width: 100%;
+    width: 100%;
+  }
+  .products1 {
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -351,4 +466,8 @@ nav {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+    /* Products Section */
+    .products1 h2 {
+     font-size: 4rem;
+    }
 }
