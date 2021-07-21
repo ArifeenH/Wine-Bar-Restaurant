@@ -344,6 +344,299 @@ nav {
   border: 1px solid black;
 }
 /*---------------------
+    Catalogue Section 
+-----------------------*/
+.catalogue-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 14rem;
+  padding-bottom: 8rem;
+}
+.catalogue-container h2{
+  color: black;
+  width: 90%;
+}
+.catalogues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  max-width: 1150px;
+  margin-top: 6rem;
+  padding: 0 1rem;
+}
+.catalogue {
+  margin: 0.5rem;
+  width: 33.33%;
+}
+.catalogue img {
+  width: 100%;
+}
+.catalogue-content {
+  padding: 2rem 3.5rem 4rem 3.5rem;
+}
+.catalogue-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.catalogue p{
+  font-size: 1.6rem;
+  color: #676767;
+  margin-bottom: 2.5rem;
+}
+.catalogue-title {
+  display: flex;
+}
+.c-title a {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: black;
+}
+.c-price a {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #b28b65;
+}
+.underlined-btn {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #b28b65;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/*---------------------
+    Gallery Section 
+-----------------------*/
+.gallery-container {
+  display: flex;
+}
+.galleries {
+  display: flex;
+}
+.galleries img {
+  filter: brightness(80%);
+  width: 100%;
+}
+.galleries img:hover{
+  filter: brightness(100%);
+}
+.gallery1 {
+ width: 50%;
+}
+.gallery2 {
+  background: #B28E65;
+  width: 25%;
+}
+.more-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50%;
+}
+.line5 {
+  background: white;
+  height: 1px;
+  width: 50px;
+  margin: 3.5rem 0;
+}
+.more-button h2 {
+  font-size: 4.55vw;
+  margin-bottom: 3rem;
+}
+.fa-angle-right{
+  font-size: 1.5rem;
+  padding: 2rem 2.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+.fa-angle-right:hover{
+  transform: scale(1.1);
+}
+.gallery3 {
+  width: 25%;
+}
+/*---------------------
+    Outlet Section 
+-----------------------*/
+.outlet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+.outlet-container h2 {
+  color: black;
+  padding-top: 13rem;
+}
+.outlet-container h4 {
+  color: #b28b65;
+  font-weight: 400;
+  padding: 1.7rem 2rem 5rem 2rem;
+  max-width: 800px;
+}
+.outlets {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2.5rem;
+}
+.outlets h3 {
+  line-height: 1;
+  padding-bottom: 3rem;
+
+}
+.underlined-btn2 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+  transition: 0.2s ease-in-out;
+}
+.underlined-btn2:hover {
+  color:#b28b65;
+}
+.outlet-bg {
+  height: 524px;
+  width: 19.7%;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.outlet-bg:hover {
+ filter: brightness(130%);
+}
+.outlet1 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),url(images/outlets/outlet1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.outlet2 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),url(images/outlets/outlet2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.outlet3 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),url(images/outlets/outlet3.jpg);
+  background-size: cover;
+  background-position: center; 
+}
+.outlet4 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),url(images/outlets/outlet4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.outlet5 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),url(images/outlets/outlet5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.outlet-content {
+  position: absolute;
+  bottom: 0;
+  padding: 0 2rem;
+}
+/*---------------------
+  Event Call to Action 
+-----------------------*/
+.event-cta-container {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(images/backgrounds/background5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 12rem 3rem 16rem 3rem;
+}
+.event-cta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.event-cta h2{
+  padding-bottom: 3rem;
+}
+.event-cta h5{
+ padding-bottom: 5rem;
+ text-transform: uppercase;
+ max-width: 830px; 
+}
+.cta-buttons {
+  display: flex;
+}
+.cta-btn {
+  margin-right: 1rem;
+}
+
+/*---------------------
+    Contact Section 
+-----------------------*/
+.contact-container{
+  background: url(images/backgrounds/bg-06-free-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 2rem 12.5rem 2rem;
+}
+.contact-text{
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #000000;
+  padding-bottom: 2rem;
+}
+.contacts h2{
+  color: #000000;
+}
+.social-icons{
+  padding-top: 4rem;
+}
+.social-icons a{
+  font-size: 1.7rem;
+  color: #705479;
+  background: white;
+  padding: 1.5rem 2rem;
+  margin: 0 .5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.social-icons a:hover{
+ color: #b28b65;
+}
+.long-line{
+  background: #cfcece;
+  width: 100%;
+  height: 0.5px;
+}
+.copyright p{
+  font-size: 1.4rem;
+  color: #676767;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+
+/*---------------------
      Responsiveness 
 -----------------------*/
 .checkbtn {
@@ -390,7 +683,48 @@ nav {
 .bottles a{
   padding: 1.5rem 0;
 }
+/*---------------------
+    Catalogue Section 
+-----------------------*/
+.catalogue-container {
+  padding-top: 10rem; 
+  padding-bottom: 6rem;
 }
+.catalogues {
+  padding: 0 2rem;
+}
+.catalogue-content {
+  padding: 2rem 1rem 4rem 1rem;
+}
+/* Gallery Section */
+.more-button h2{
+ margin-bottom: 1rem;
+}
+.fa-angle-right{
+  padding: 1rem 1.5rem;
+}
+/*---------------------
+    Outlet Section 
+-----------------------*/
+.outlet-bg{
+ height: 346px;
+ width: 33%;
+}
+  .outlet4 {
+    display: none;
+  }
+  .outlet5 {
+    display: none;
+  }
+ /*---------------------
+  Event Call to Action 
+-----------------------*/
+.event-cta-container{
+  padding-bottom: 12rem;
+  background-attachment: scroll;
+}
+}
+
 @media (max-width: 950px) {
   header {
     padding-bottom: 10rem;
@@ -431,8 +765,46 @@ nav {
  .products1 h2{
    font-size: 5.5rem;
  }
+ /*---------------------
+    Catalogue Section 
+-----------------------*/
+.catalogue-container h2{
+  font-size: 5.5rem;
 }
-
+.catalogue p{
+  font-size: 1.45rem;
+}
+.c-title a {
+  font-size: 1.64rem;
+}
+.c-price a {
+  font-size: 1.64rem;
+}
+.underlined-btn {
+  font-size: 1.09rem;
+}
+/* Outlets Section */
+.outlets h3{
+  font-size: 2.8rem;
+}
+.underlined-btn2{
+  font-size: 1.09rem;
+}
+.outlet-container h2 {
+  font-size: 5.5rem;
+}
+/* Event CTA Section */
+.event-cta h2{
+  font-size: 5.5rem;
+}
+.event-cta h5{
+ font-size: 1.64rem;
+}
+/* Footer Section */
+.contact-heading{
+   font-size: 5.5rem;
+}
+}
 
 @media (max-width: 800px) {
   /* Products Section */
@@ -446,6 +818,42 @@ nav {
   .products1 {
     padding-bottom: 2rem;
   }
+  /* Catalogue Section */
+ .catalogues {
+   flex-wrap: wrap;
+ }
+ .catalogue {
+  flex: 1 1 40rem;
+ }
+ .catalogue img {
+ max-width: 370px;
+ }
+/* Gallery Section */
+ .fa-angle-right{
+  padding: 0.5rem 1rem;
+}
+ .line5 {
+  margin: 2rem 0;
+ }
+  /* Outlets Section */
+  .outlets{
+    flex-wrap: wrap;
+  }
+  .outlet4 {
+    display: flex;
+  }
+  .outlet5 {
+    display: flex;
+  }
+  .outlet-bg{
+   height: 524px;
+   width: 100%;
+   margin-bottom: 2rem;
+  } 
+  /* Event CTA Section */
+.event-cta-container{
+  padding: 6rem 2rem 8rem 2rem;
+}
 }
 
 @media (max-width: 520px) {
@@ -470,4 +878,55 @@ nav {
     .products1 h2 {
      font-size: 4rem;
     }
+     /* Catalogue Section */
+     .catalogue-container h2{
+      font-size: 4rem;
+    } 
+    /* Gallery Section */
+    .fa-angle-right{
+      font-size: 1rem;
+      padding: 0.2rem 0.5rem;
+    }
+    .line5{
+      margin: 1rem;
+    }
+    /* Outlet Section */
+    .outlet-container h2{
+      font-size: 4.4rem;
+    }
+    .outlets h3{
+      font-size: 2.6rem;
+    }
+    /* Event CTA Section */
+    .event-cta-container{
+      padding: 4rem 2rem 8rem 2rem;
+    }
+    .event-cta h2{
+      font-size: 4rem;
+    }
+    .event-cta h5{
+     font-size: 1.64rem;
+    }
+     /* Footer Section */
+  .contact-heading{
+    font-size: 4rem;
+ }
+ .contacts {
+  padding: 4rem 2rem 4rem 2rem;
+ }
+}
+@media (max-width: 400px){
+  .cta-buttons{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-btn {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  .cta-btn2{
+    padding: 1.8rem 2.9rem;
+  }
+ 
 }
